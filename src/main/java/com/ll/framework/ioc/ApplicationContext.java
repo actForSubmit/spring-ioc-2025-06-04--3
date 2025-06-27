@@ -41,17 +41,10 @@ public class ApplicationContext {
           }
         }
 
-        for (int i = 0; i < 2; i++) {
+        while (!methodList.isEmpty()) {
           createMethodBean(clazzInstance, methodList);
-          System.out.println(methodList.size());
         }
-//        while (!methodList.isEmpty()) {
-//        }
       }
-    }
-
-    for (Map.Entry<String, Object> entry : beanMap.entrySet()) {
-      System.out.println(entry.getKey() + " : " + entry.getValue());
     }
   }
 
